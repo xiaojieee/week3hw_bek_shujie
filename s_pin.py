@@ -1,5 +1,5 @@
 import getpass
-# has issues with running getpass in pycharm, but it works when running in command prompt
+# added configurations for it to run in pycharm
 
 print("Welcome to the bank!")
 correct_pin = "1234"
@@ -7,7 +7,7 @@ correct_pin = "1234"
 attempts = 3
 
 while attempts > 0:
-    supplied_pin = getpass.getpass(prompt="Enter your PIN:", stream=None)
+    supplied_pin = getpass.getpass("Enter your PIN:")
 
 # while there's attempts left print the "enter your pin"
 
