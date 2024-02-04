@@ -90,10 +90,19 @@ print(', '.join(name.split()[::-1]).title())
 # ------ Learner Guide -------
 # String Methods - Split and Join
 line = 'root::0:superuser:/root:/bin/sh'
+# split line into a list item at each colon and assign to a list with a variable name of elems
 elems = line.split(':')
-
+# print the variable to show it worked
+print(elems)
+# prints: ['root', '', '0', 'superuser', '/root', '/bin/sh']
+# elems list - replaces index 0 ('root') list item with 'avatar'
 elems[0] = 'avatar'
+# replaces index 4 ('/root') list item with 'The super-user (zero)'
 elems[4] = 'The super-user (zero)'
+# print to show list replacements worked
+print(elems)
+# prints: ['avatar', '', '0', 'superuser', 'The super-user (zero)', '/bin/sh']
+# join list items to make a string, placing a colon between each list item
 line = ':'.join(elems)
 print(line)
 # prints: avatar::0:superuser:The super-user (zero):/bin/sh
