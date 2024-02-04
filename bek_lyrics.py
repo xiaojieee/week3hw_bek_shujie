@@ -12,12 +12,15 @@ print(lyrics)
 
 print("Word count:")
 
-# converts all words to lowercase and splits into list items
+# .lower() converts all characters to lowercase
+# .split() splits string into list of words using whitespace as separator
 words = lyrics.lower().split()
 # print the list
 print(words)
 # use Counter on the list 'words' to count occurrence of each word and store in new 'word_count' variable
 word_count = Counter(words)
+# prints as a dictionary with each key (word) and value (occurrence)
+# print(word_count)
 # use .most_common() method to show the top 10 words in order of highest occurrence
 print(word_count.most_common(10))
 
@@ -32,7 +35,8 @@ print(lyric_lines)
 
 # create an empty list to store the sliced lyrics
 sliced_lyrics = []
-# for loop iterates over each line
+# enumerate() function needed to provide both index and value of each item in the list
+# therefore the for loop iterates over the list of lyric lines with index AND the line
 for index, line in enumerate(lyric_lines):
     # if statement used to apply slice operation to individual lines based on index position
     # for first line (index 0) append the last 3 characters of the line to sliced_lyrics list
