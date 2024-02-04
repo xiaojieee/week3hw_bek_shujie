@@ -1,4 +1,7 @@
 # Nick Cave Into My Arms
+
+# Researching using most_common() method to find the most common element (word in my usage) in a collection
+# most_common() is typically used with collections.Counter class
 # import Counter from collections module to count objects eg word occurrence
 from collections import Counter
 
@@ -68,6 +71,13 @@ new_lyrics = ' '.join(sliced_lyrics).lower()
 # .capitalize() converts the first letter/character of the sentence to a capital
 print((new_lyrics).capitalize())
 # prints: God you do kneel down to intervene to touch to leave and direct
+
+# -------- NOTES --------
+'''
+Using enumerate in a for loop allows us to loop over an iterable and, at the same time, keep track of the index of the 
+current item. Using a counter variable, on the other hand, requires us to manually increment the variable inside the 
+loop and keep track of the index ourselves.
+'''
 
 
 
