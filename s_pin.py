@@ -1,5 +1,6 @@
-import getpass
+import pwinput
 # added configurations for it to run in pycharm
+# pwinput can mask the pin while we type the pin
 
 print("Welcome to the bank!")
 correct_pin = "1234"
@@ -7,7 +8,7 @@ correct_pin = "1234"
 attempts = 3
 
 while attempts > 0:
-    supplied_pin = getpass.getpass("Enter your PIN:")
+    supplied_pin = pwinput.pwinput("Enter your PIN:")
 
 # while there's attempts left print the "enter your pin"
 
