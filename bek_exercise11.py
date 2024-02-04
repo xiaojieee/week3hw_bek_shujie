@@ -13,7 +13,7 @@ string_length = len(Belgium)
 print(string_length)
 # prints: 81
 # more concise - prints an underscore 81 times (the length of Belgium string)
-print('-' * len(Belgium))
+print('-' * string_length)
 
 # b - the string with the comma separators replaced by colons ':'
 updated_string = Belgium.replace(",", ":")

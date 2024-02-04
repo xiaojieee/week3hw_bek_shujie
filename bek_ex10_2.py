@@ -1,30 +1,30 @@
-# //////// FOR LOOP ////////
-
-# declare and initialise the correct PIN number
-correct_pin = 1984
-# declare and initialise attempt count to 0
-count = 0
-
-# start a loop that will run up to 3 times
-for i in range(3):
-    # input prompts user to input PIN number, int() converts the string input to an integer
-    supplied_pin = int(input("Enter your PIN: "))
-    # increment the attempt counter by 1. Could be written as count = count + 1
-    # this will increase by one each time the loop is repeated
-    count += 1
-    # use equality operator to check if entered PIN matches correct_pin
-    if supplied_pin == correct_pin:
-        # print message if correct, giving the attempt number, break exits the loop
-        print(f"Correct - attempt {count} of 3")
-        break
-    # != means not equals, if PIN entered does not match correct_pin...
-    if supplied_pin != correct_pin:
-        # print message if PIN doesn't match giving attempt number
-        print(f"Incorrect - attempt {count} of 3")
-        # repeat the for loop again, another 2 times maximum (as count of 3 specified).
-else:
-    # for loop ends after 3 loops with print message giving attempt number which will match number in range() function
-    print(f"You've exceeded {count} attempts. Please speak to your branch manager!")
+# # //////// FOR LOOP ////////
+#
+# # declare and initialise the correct PIN number
+# correct_pin = 1984
+# # declare and initialise attempt count to 0
+# count = 0
+#
+# # start a loop that will run up to 3 times
+# for i in range(3):
+#     # input prompts user to input PIN number, int() converts the string input to an integer
+#     supplied_pin = int(input("Enter your PIN: "))
+#     # increment the attempt counter by 1. Could be written as count = count + 1
+#     # this will increase by one each time the loop is repeated
+#     count += 1
+#     # use equality operator to check if entered PIN matches correct_pin
+#     if supplied_pin == correct_pin:
+#         # print message if correct, giving the attempt number, break exits the loop
+#         print(f"Correct - attempt {count} of 3")
+#         break
+#     # != means not equals, if PIN entered does not match correct_pin...
+#     if supplied_pin != correct_pin:
+#         # print message if PIN doesn't match giving attempt number
+#         print(f"Incorrect - attempt {count} of 3")
+#         # repeat the for loop again, another 2 times maximum (as count of 3 specified).
+# else:
+#     # for loop ends after 3 loops with print message giving attempt number which will match number in range() function
+#     print(f"You've exceeded {count} attempts. Please speak to your branch manager!")
 
 
 # # //////// WHILE LOOP ////////
@@ -60,30 +60,30 @@ else:
 #         # use plus-equal operator, same as count = count + 1
 
 
-# # ////// Exercise 10, Part 3: //////
-#
-# # getpass module - securely input passwords from user without input showing on screen
-# import getpass
-#
-# correct_pin = 1984
-# count = 0
-#
-# for i in range(3):
-#     supplied_pin = int(getpass.getpass("Enter your PIN: "))
-#     count += 1
-#     if supplied_pin == correct_pin:
-#         print(f"Correct - attempt {count} of 3")
-#         break
-#     if supplied_pin != correct_pin:
-#         print(f"Incorrect - attempt {count} of 3")
-# else:
-#    print(f"You've exceeded {count} attempts. Please speak to your branch manager!")
-#
-# # I get the following error message:
-# # /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/getpass.py:91: GetPassWarning: Can not control echo on the terminal
-# #   passwd = fallback_getpass(prompt, stream)
-# # Warning: Password input may be echoed.
-# # Enter your pin:
+# ////// Exercise 10, Part 3: //////
+
+# getpass module - securely input passwords from user without input showing on screen
+import getpass
+
+correct_pin = 1984
+count = 0
+
+for i in range(3):
+    supplied_pin = int(getpass.getpass("Enter your PIN: "))
+    count += 1
+    if supplied_pin == correct_pin:
+        print(f"Correct - attempt {count} of 3")
+        break
+    if supplied_pin != correct_pin:
+        print(f"Incorrect - attempt {count} of 3")
+else:
+   print(f"You've exceeded {count} attempts. Please speak to your branch manager!")
+
+# I get the following error message:
+# /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/getpass.py:91: GetPassWarning: Can not control echo on the terminal
+#   passwd = fallback_getpass(prompt, stream)
+# Warning: Password input may be echoed.
+# Enter your pin:
 
 
 # ////// FOR LOOPS PRACTICE //////
