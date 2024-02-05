@@ -14,21 +14,14 @@ print(updated_string)
 
 # 3 - the population of Belgium (the second field) plus the population of the capital city (the fourth field).
 # HINT: the answer should be 11183818
-# use split method to split the original string into a list adding comma as separator
-Belgium_split = Belgium.split(',')
-print(Belgium_split)
-# prints:
-# ['Belgium', '10445852', 'Brussels', '737966', 'Europe', '1830', 'Euro', 'Catholicism', 'Dutch', 'French', 'German']
 
-# convert to an integer for addition. If left as a string then the two numbers would be concatenated together
-# concatenation of strings would result in 10445852737966
-# population of Belgium is the second field which is index 1 (starts at 0)
-num1 = int(Belgium_split[1])
+# convert to an integer for addition - concatenation of strings would result in 10445852737966
+num1 = int(updated_string.split(':')[1])
 print(f"The population of Belgium is {num1}")
 # prints: The population of Belgium is 10445852
 
 # population of the capital city is the fourth field which is index 3
-num2 = int(Belgium_split[3])
+num2 = int(updated_string.split(':')[3])
 print(f"The population of Brussels is {num2}")
 # prints: The population of Brussels is 737966
 
