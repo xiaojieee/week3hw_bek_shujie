@@ -1,21 +1,21 @@
-# ////// Exercise 10, Part 3: //////
-
-# pwinput module - securely input passwords from user without input showing on screen (use *)
+# # ////// Exercise 10, Part 3: //////
+#
+# # pwinput module - securely input passwords from user without input showing on screen (use *)
 import pwinput
-
-correct_pin = 1984
-count = 0
-
-for i in range(3):
-    supplied_pin = int(pwinput.pwinput("Enter your PIN: "))
-    count += 1
-    if supplied_pin == correct_pin:
-        print(f"Correct - attempt {count} of 3")
-        break
-    if supplied_pin != correct_pin:
-        print(f"Incorrect - attempt {count} of 3")
-else:
-   print(f"You've exceeded {count} attempts. Please speak to your branch manager!")
+#
+# correct_pin = 1984
+# count = 0
+#
+# for i in range(3):
+#     supplied_pin = int(pwinput.pwinput("Enter your PIN: "))
+#     count += 1
+#     if supplied_pin == correct_pin:
+#         print(f"Correct - attempt {count} of 3")
+#         break
+#     if supplied_pin != correct_pin:
+#         print(f"Incorrect - attempt {count} of 3")
+# else:
+#     print(f"You've exceeded {count} attempts. Please speak to your branch manager!")
 
 # -----------------------------------
 
