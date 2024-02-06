@@ -19,14 +19,14 @@ print(belgium_colon.split(':'))
 
 
 # 3 work out the total population
-
-pop_bel = int(belgium_colon.split(':')[1])
-pop_bru = int(belgium_colon.split(':')[3])
+# Name the variables with super obvious names
+population_belgium = int(belgium_colon.split(':')[1])
+population_brussels = int(belgium_colon.split(':')[3])
 # int method - assuming the string value is an integer
 # [1] refers to the place of the field in the list
 # remember it starts from [0]
 
-total_population = pop_bel + pop_bru
+total_population = population_belgium + population_brussels
 print('The total population of Belgium:', total_population)
 
 # shorten to one line using an f-string
